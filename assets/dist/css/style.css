@@ -1,0 +1,388 @@
+/* Navbar */
+.navbar-brand {
+  /* font: 32px Viga; */
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.container-margin
+{
+  margin-top: 100px;
+}
+/* Jumbotron */
+.jumbotron {
+  background: url(../img/jumbotron-bg.jpg);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  z-index: -1;
+}
+.border-col{
+  
+}
+.jumbotron::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  bottom: 0;
+}
+
+.jumbotron .container {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.jumbotron .display-4-header{
+  font-size : 1.3em;
+  font-weight: initial;
+  margin-top: 115px;
+  font-style: italic;
+}
+.jumbotron .display-4 {
+  /* font-weight: 900; */
+  font-size: 1.8em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+
+
+/* Utility */
+.tombol {
+  border-radius: 40px;
+  text-transform: uppercase;
+}
+
+/*=-footer-=*/
+footer {
+  color: #fff;
+  background-attachment: fixed;
+  background-color:#222;
+background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+  background-size: cover;
+  background-position: bottom;
+}
+footer p {
+  color: #ccc;				
+}
+footer a {
+  color: #ccc;				
+}
+.social-pet li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-pet li a {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  line-height: 35px;
+  background-color: #3a5a95;
+  color: #fff;
+}
+.social-pet li:nth-child(2) a {
+  background-color: #57aced;
+}
+.social-pet li:nth-child(3) a {
+  background-color: #dd4f43;
+}
+.social-pet li:nth-child(4) a {
+  background-color: #6b27b2;
+}
+.social-pet li a:hover {
+  background-color: #0141a2;
+}
+.social-pet li a:hover i {
+  transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+.recent-post li {
+  display: block;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+.recent-post li label {
+  float: left;
+  border: 2px solid #ccc;
+  padding: 1px 7px;
+  text-align: center;
+}
+.recent-post li label span {
+  color: #fff;
+}
+footer .input-group-addon {
+  background-color: #0141a2;
+  padding: 10px;
+}
+.f-address li {
+  display: inline-block;
+}
+.f-address li i {
+  color: #2995de;
+  font-size: 18px;
+}
+.f-address li a {
+  color: #ccc;
+}
+/*=-Copyright-=*/
+.copyright {
+  background-color: #111;
+  padding: 12px 0;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+  .navbar {
+      /* padding-top: 10px; */
+  }
+.border-col{
+  border-right: 1px solid #dedede;
+}
+  .navbar-brand,
+  .nav-link {
+      /* color: white !important; */
+      /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) */
+  }
+
+  .nav-link {
+      text-transform: capitalize;
+      margin-right: 5px;
+  }
+
+  .btn-login{
+    text-transform: capitalize;
+    margin-left: 6px;
+    border-radius:40px
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #dc3545;
+      margin: auto;
+      margin-bottom: -3px;
+      width: 50%;
+  }
+
+
+  .jumbotron {
+      margin-top: -40px;
+      height: 700px;
+  }
+  .jumbotron .display-4-header{
+      font-size: 30px;
+      margin-top: 180px;
+  }
+  .jumbotron .display-4 {
+      font-size: 3.5em;
+      /* margin-top: 150px; */
+  }
+
+
+  .workingspace {
+      text-align: left;
+  }
+
+
+  .testimonial p {
+      font-size: 2em;
+  }
+
+}
+
+/* login */
+html,
+body {
+	height: 100%;
+}
+
+body.my-login-page {
+	background-color: #f7f9fb;
+	font-size: 14px;
+}
+
+#panel {
+	display: none;
+}
+
+.my-login-page .brand {
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	/* border-radius: 50%; */
+	margin: 10px auto 5px;
+	/* box-shadow: 0 4px 8px rgba(0,0,0,.05); */
+	position: relative;
+	z-index: 1;
+}
+
+.title-content {
+	border-bottom: 5px solid #dc3545;
+	width: 10%;
+	font-weight: 900;
+	font-size: 60px;
+}
+
+.object-cover-img {
+	object-fit: cover;
+	height: 200px;
+}
+
+.my-login-page .brand img {
+	width: 100%;
+}
+
+.my-login-page .card-wrapper {
+	width: 400px;
+}
+
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 20px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+.my-login-page .footer {
+	margin: 10px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.my-login-page .brand {
+		margin: 30px auto 15px;
+	}
+
+	.my-login-page .footer {
+		margin: 40px 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+/* Pricing */
+section.pricing {
+  /* background: #007bff; */
+  /* background: linear-gradient(to right, #0062E6, #33AEFF); */
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+.box-progress{
+  width: 100%;
+}
+.box-progress .active{
+  background-color: #dc3545;
+}
+.box-progress .box{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border:solid 1px #dc3545;
+  margin:auto;
+  float:left;
+}
+.box-progress i{
+  font-size: 100px;
+  float:right;
+}
